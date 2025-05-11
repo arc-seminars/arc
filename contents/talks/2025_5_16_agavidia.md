@@ -1,6 +1,4 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
 startDateTime: 2025-05-16T13:00:00
 endDateTime: 2025-05-16T14:00:00
@@ -12,6 +10,7 @@ title: "Weighing the Giants: Constraining Galaxy Cluster Shapes and Mass"
 speaker: "Adriana Gavidia"
 speakerAffiliation: "Observational Cosmology; Caltech"
 host: "Kane"
+cancelled: false
 
 tags:
   - "astrophysics"

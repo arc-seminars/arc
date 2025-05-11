@@ -1,6 +1,4 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
 startDateTime: 2025-05-02T13:00:00
 endDateTime: 2025-05-02T14:00:00
@@ -12,6 +10,7 @@ title: "Black Hole Perturbation Theory and Tests of General Relativity"
 speaker: "Colin Weller"
 speakerAffiliation: "TAPIR; Caltech"
 host: "Rui"
+cancelled: true
 
 tags:
   # - "astrophysics"
@@ -75,7 +74,7 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - notes: "flier"
+  - type: "flier"
     url: "https://drive.google.com/file/d/1Kq7TuDYK8nWb-F5fx2minbLmfq4r2uxM/view?usp=drive_link"
 
 ---

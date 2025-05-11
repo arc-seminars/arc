@@ -1,6 +1,4 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
 startDateTime: 2025-02-14T13:00:00
 endDateTime: 2025-02-14T14:00:00
@@ -12,6 +10,7 @@ title: "WD + MS binaries as probes of binary interaction"
 speaker: "Natsuko Yamaguchi"
 speakerAffiliation: "Astronomy; Caltech"
 host: "Knapp"
+cancelled: false
 
 tags:
   - "astrophysics"
@@ -69,9 +68,9 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - notes: "flier"
+  - type: "flier"
     url: "https://drive.google.com/file/d/17wtZZoZhQJLtPP-xpjlh7kU-BQ0QDw8S/view?usp=drive_link"
-  - notes: "slides"
+  - type: "slides"
     url: "https://drive.google.com/file/d/17TBHifniyrA6rBMQtQh2i5gkfoPtnwIP/view?usp=drive_link"
 
 ---

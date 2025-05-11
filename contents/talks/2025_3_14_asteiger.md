@@ -1,6 +1,4 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
 startDateTime: 2025-03-14T13:00:00
 endDateTime: 2025-03-14T14:00:00
@@ -12,6 +10,7 @@ title: "Probing Cosmic Inflation with BICEP Array"
 speaker: "Aaron Steiger"
 speakerAffiliation: "Observational Cosmology; Caltech"
 host: "Kane"
+cancelled: false
 
 tags:
   # - "astrophysics"
@@ -75,11 +74,11 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - notes: "flier"
+  - type: "flier"
     url: "https://drive.google.com/file/d/1cpMJfiNe-0rU2iUzmTOSd5nL42hQTI6U/view?usp=drive_link"
-  - notes: "recording"
+  - type: "recording"
     url: "https://www.youtube.com/watch?v=OyZ_kH5Vvxg"
-  - notes: "slides"
+  - type: "slides"
     url: "https://drive.google.com/file/d/1CiQVpiUpvTb8-SCRbpxBm4DndTztsXdP/view?usp=drive_link"
 
 ---

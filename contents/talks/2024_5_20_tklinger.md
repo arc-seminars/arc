@@ -1,6 +1,4 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
 startDateTime: 2024-05-20T16:00:00
 endDateTime: 2024-05-20T17:00:00
@@ -12,6 +10,7 @@ title: "What's so Extreme About Extreme Mass Ratio Inspirals?"
 speaker: "Talya Klinger"
 speakerAffiliation: "TAPIR, SXS; Caltech"
 host: "Rui"
+cancelled: false
 
 tags:
   # - "astrophysics"
@@ -67,9 +66,9 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - notes: "flier"
+  - type: "flier"
     url: "https://drive.google.com/file/d/1duWTC3zXuDhGqNQYrg9iUNjCheEEnkPQ/view?usp=drive_link"
-  - notes: "slides"
+  - type: "slides"
     url: "https://drive.google.com/file/d/1jyeCw1P5qHCMnBStJzNM3PkWL39E2HFR/view?usp=drive_link"
 
 ---

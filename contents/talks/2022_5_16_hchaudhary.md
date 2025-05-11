@@ -1,6 +1,4 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
 startDateTime: 2022-05-16T16:30:00
 endDateTime: 2022-05-16T17:30:00
@@ -12,6 +10,7 @@ title: "Physics-Informed Machine Learning"
 speaker: "Himanshu Chaudhary"
 speakerAffiliation: "TAPIR, SXS; Caltech"
 host: "Rui"
+cancelled: false
 
 tags:
   # - "astrophysics"
@@ -28,9 +27,9 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - notes: "recording"
+  - type: "recording"
     url: "https://www.youtube.com/watch?v=0fBBUKUtUo4"
-  - notes: "slides"
+  - type: "slides"
     url: "https://drive.google.com/file/d/1krlXLYVO_vALlYvByNZK0UD7x31VLQx3/view?usp=drive_link"
 
 ---

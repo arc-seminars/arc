@@ -1,6 +1,4 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
 startDateTime: 2025-05-09T13:00:00
 endDateTime: 2025-05-09T14:00:00
@@ -12,6 +10,7 @@ title: "Tasting the Gravitational Rainbow: the Future of Gravitational Waves"
 speaker: "Andrew Laeuger"
 speakerAffiliation: "TAPIR; Caltech"
 host: "Rui"
+cancelled: false
 
 tags:
   # - "astrophysics"
@@ -75,11 +74,11 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - notes: "flier"
+  - type: "flier"
     url: "https://drive.google.com/file/d/1ECPrDDYT6D998HDE30nvGwi0RUkb8h-9/view?usp=drive_link"
-  - notes: "recording"
+  - type: "recording"
     url: "https://www.youtube.com/watch?v=Ace-CE4v2rk"
-  - notes: "slides"
+  - type: "slides"
     url: "https://docs.google.com/presentation/d/1IqBCVwoG9_5sC5f46o2TppQXsqmmYBp0/edit?usp=sharing"
 
 ---

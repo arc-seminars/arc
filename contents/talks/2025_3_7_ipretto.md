@@ -1,6 +1,4 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
 startDateTime: 2025-03-07T13:00:00
 endDateTime: 2025-03-07T14:00:00
@@ -12,6 +10,7 @@ title: "Ring-ring: black hole calling!"
 speaker: "Isabella Pretto"
 speakerAffiliation: "TAPIR, SXS; Caltech"
 host: "Knapp"
+cancelled: false
 
 tags:
   # - "astrophysics"
@@ -72,11 +71,11 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - notes: "flier"
+  - type: "flier"
     url: "https://drive.google.com/file/d/1iy6f5a6EbgorHGptu0MaAIPX4ppDFcE1/view?usp=drive_link"
-  - notes: "recording"
+  - type: "recording"
     url: "https://www.youtube.com/watch?v=Rak_uvoqXEk"
-  - notes: "slides"
+  - type: "slides"
     url: "https://drive.google.com/file/d/1uYzJxjUMcLJsEfxapGt0mRTfgmo8c68q/view?usp=drive_link"
 
 ---

@@ -1,6 +1,4 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
 startDateTime: 2024-02-06T16:00:00
 endDateTime: 2024-02-06T17:00:00
@@ -12,6 +10,7 @@ title: "Possible Spacetime Discretization in Astrophysical Phenomena"
 speaker: "Vittoria Tommasini"
 speakerAffiliation: "TAPIR, SXS; Caltech"
 host: "Rui"
+cancelled: false
 
 tags:
   # - "astrophysics"
@@ -61,7 +60,7 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - notes: "flier"
+  - type: "flier"
     url: "https://drive.google.com/file/d/1h_8m7ZmrG-uR-QA4NFoAyQaSqkEPk275/view?usp=drive_link"
 
 ---

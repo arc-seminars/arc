@@ -1,6 +1,4 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
 startDateTime: 2022-01-10T16:30:00
 endDateTime: 2022-01-10T17:30:00
@@ -12,6 +10,7 @@ title: "Rapid Stellar Rotation and Exoplanet Spin-Orbit Measurement"
 speaker: "Shashank Dholakia, Shishir Dholakia"
 speakerAffiliation: "Astronomy; UC Berkeley"
 host: "Rui"
+cancelled: false
 
 tags:
   - "astrophysics"

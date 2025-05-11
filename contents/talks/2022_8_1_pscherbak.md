@@ -1,6 +1,4 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
 startDateTime: 2022-08-01T16:30:00
 endDateTime: 2022-08-01T17:30:00
@@ -12,6 +10,7 @@ title: "Mass Transfer Stability in Binaries"
 speaker: "Peter Scherbak"
 speakerAffiliation: "TAPIR; Caltech"
 host: "Rui"
+cancelled: false
 
 tags:
   - "astrophysics"
@@ -35,9 +34,9 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - notes: "recording"
+  - type: "recording"
     url: "https://www.youtube.com/watch?v=iPGQT0CHOAE"
-  - notes: "slides"
+  - type: "slides"
     url: "https://drive.google.com/file/d/1PGHm2s-oHViWvAzrDnryub_gHdGRQBKR/view?usp=drive_link"
 
 ---

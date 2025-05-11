@@ -1,6 +1,4 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
 startDateTime: 2024-02-20T16:00:00
 endDateTime: 2024-02-20T17:00:00
@@ -12,6 +10,7 @@ title: "The X-ray Main Sequence"
 speaker: "Tony Rodríguez"
 speakerAffiliation: "Astronomy; Caltech"
 host: "Rui"
+cancelled: false
 
 tags:
   - "astrophysics"
@@ -66,9 +65,9 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - notes: "flier"
+  - type: "flier"
     url: "https://drive.google.com/file/d/1mJfJeCl5AxqjCrtldbtueiH-Rav9Nfj_/view?usp=drive_link"
-  - notes: "recording"
+  - type: "recording"
     url: "https://www.youtube.com/watch?v=VcxAbH9QLSQ"
 
 ---

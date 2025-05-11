@@ -1,6 +1,4 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
 startDateTime: 2022-06-23T16:30:00
 endDateTime: 2022-06-23T17:30:00
@@ -12,6 +10,7 @@ title: "Chemistry of Planet Formation"
 speaker: "Suchitra Narayanan"
 speakerAffiliation: "Institute for Astronomy; UH Manoa"
 host: "Rui"
+cancelled: false
 
 tags:
   - "astrophysics"
@@ -32,7 +31,7 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - notes: "recording"
+  - type: "recording"
     url: "https://www.youtube.com/watch?v=D7dm4ffkOzI"
 
 ---
