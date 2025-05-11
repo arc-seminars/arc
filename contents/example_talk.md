@@ -1,15 +1,16 @@
 ---
-# cancelled: true # uncomment if talk gets cancelled
-
 # general information which usually does not change
-dateTime: 2025-05-10T16:00:00
+startDateTime: 2025-05-10T16:00:00
+endDateTime: 2025-05-10T17:00:00
 location: "312 Cahill"
 timeZone: "America/Los_Angeles"
+cancelled: false
 
 # Talk information
 title: "Talk Title"
 speaker: "Ocsi Bacsi"
 speakerAffiliation: "TAPIR, SXS; Caltech"
+host: "Rui"
 
 tags:
   - "black holes"
