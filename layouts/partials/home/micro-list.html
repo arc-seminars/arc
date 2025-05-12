@@ -1,9 +1,15 @@
 {{- $title := .title -}}
-{{- $items := .items -}}
+<!-- {{- $items := .items -}} -->
+
+<!-- show sorted by date -->
+{{- $sortedItems := sort .items "Params.startDateTime" "desc" -}}
+
+<!-- number of items to show -->
+{{ $showNum := 100 }} 
 
 <h2>{{- $title -}}</h2>
 <div class="flat-list">
-  {{- range first (default 10 site.Params.rtw_theme.params.home.countRecent) $items -}}
+  {{- range first (default $showNum site.Params.rtw_theme.params.home.countRecent) $sortedItems -}}
     <div class="flat-list-item">
       <div>
         <a href="{{- .RelPermalink -}}">{{- .LinkTitle -}}</a>
@@ -17,12 +23,18 @@
 
           <time class="text-sm dim" style="float: right;" datetime="{{ $startDateTimeMachine }}">
             {{ $startDateHuman }}
-            <br>{{$startTimeHuman}}–{{$endTimeHuman}}
+            <br>
+            {{$startTimeHuman}}–{{$endTimeHuman}}
           </time>
         {{ end }}
 
       </div>
-      <small><p>{{- partial "components/summary.html" . -}}</p></small>
+
+      <!-- display first two lines of abstract; modified from original version -->
+      {{ with .Content }}
+        <small><p>{{ . }}</p></small>
+      {{ end }}
+
     </div>
   {{- end -}}
 </div>
