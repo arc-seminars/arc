@@ -1,0 +1,28 @@
+{{- $title := .title -}}
+{{- $items := .items -}}
+
+<h2>{{- $title -}}</h2>
+<div class="flat-list">
+  {{- range first (default 10 site.Params.rtw_theme.params.home.countRecent) $items -}}
+    <div class="flat-list-item">
+      <div>
+        <a href="{{- .RelPermalink -}}">{{- .LinkTitle -}}</a>
+
+        <!-- modify default theme behavior to accommodate date -->
+        {{ with .Params }}
+          {{ $startDateTimeMachine := .startDateTime | time.Format "2006-01-02T15:04:05-07:00" }}
+          {{ $startDateHuman := .startDateTime | time.Format "Mon, Jan 2, 2006" }}
+          {{ $startTimeHuman := .startDateTime | time.Format "3:04" }}
+          {{ $endTimeHuman := .endDateTime | time.Format "3:04 PM" }}
+
+          <time class="text-sm dim" style="float: right;" datetime="{{ $startDateTimeMachine }}">
+            {{ $startDateHuman }}
+            <br>{{$startTimeHuman}}–{{$endTimeHuman}}
+          </time>
+        {{ end }}
+
+      </div>
+      <small><p>{{- partial "components/summary.html" . -}}</p></small>
+    </div>
+  {{- end -}}
+</div>

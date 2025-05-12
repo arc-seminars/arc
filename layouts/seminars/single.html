@@ -4,7 +4,18 @@
     <h1>{{ .Title }}</h1>
 
     <!-- time -->
-    {{ with .Params.startDateTime }}
+    {{ with .Params }}
+      {{ $startDateTimeMachine := .startDateTime | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $startDateHuman := .startDateTime | time.Format "Monday, January 2, 2006" }}
+      {{ $startTimeHuman := .startDateTime | time.Format "3:04" }}
+      {{ $endTimeHuman := .endDateTime | time.Format "3:04 PM" }}
+
+      <time datetime="{{ $startDateTimeMachine }}">{{ $startDateHuman }} at {{$startTimeHuman}}–{{$endTimeHuman}} </time>
+    {{ end }}
+
+
+
+    <!-- {{ with .Params.startDateTime }}
       {{ $startDateTimeMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
       {{ $startDateHuman := . | time.Format "Monday, January 2, 2006" }}
       {{ $startTimeHuman := . | time.Format "3:04" }}
@@ -13,7 +24,7 @@
         {{ $endTimeHuman := . | time.Format "3:04 PM" }}
         <time datetime="{{ $startDateTimeMachine }}">{{ $startDateHuman }} at {{$startTimeHuman}}–{{$endTimeHuman}} </time>
       {{end}}
-    {{end}}
+    {{end}} -->
 
     <!-- speaker -->
     {{ with .Params.speaker }}
