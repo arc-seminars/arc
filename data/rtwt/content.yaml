@@ -1,0 +1,13 @@
+home:
+  image: 'images/arc-seminar-banner.png'
+  # greetings: 'Seminars by grad students, for grad students!'
+  # text: ''
+# side:
+#   home:
+#   - content: 'If you like the theme make sure to give the repo a star!'
+#     imagePath: 'images/gh_source.png'
+#     imageHref: 'https://github.com/math-queiroz/rusty-typewriter'
+#     imageWidth: '100%'
+  # - title: ''
+#     content: 'Interested? Join our mailing list [here]({{< ref "http://lists.astro.caltech.edu:88/mailman/listinfo/arc" >}})!'
+
