@@ -10,7 +10,7 @@
 <h2>{{- $title -}}</h2>
 <div class="flat-list">
   {{- range first (default $showNum site.Params.rtw_theme.params.home.countRecent) $sortedItems -}}
-    <div class="flat-list-item">
+    <div class="flat-list-item" style="min-height:40px">
       <div>
         <a href="{{- .RelPermalink -}}">{{- .LinkTitle -}}</a>
 
@@ -21,10 +21,9 @@
           {{ $startTimeHuman := .startDateTime | time.Format "3:04" }}
           {{ $endTimeHuman := .endDateTime | time.Format "3:04 PM" }}
 
-          <time class="text-sm dim" style="float: right;" datetime="{{ $startDateTimeMachine }}">
-            {{ $startDateHuman }}
-            <br>
-            {{$startTimeHuman}}–{{$endTimeHuman}}
+          <time class="text-sm dim" style="float: right; margin-left: 20px; text-align: right;" datetime="{{ $startDateTimeMachine }}">
+            {{ $startDateHuman }}<br>{{$startTimeHuman}}–{{$endTimeHuman}}
+            <!-- {{ $startDateHuman }}, {{$startTimeHuman}} -->
           </time>
         {{ end }}
 
