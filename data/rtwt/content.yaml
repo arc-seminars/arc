@@ -1,7 +1,7 @@
 home:
   image: 'images/arc-seminar-banner.png'
-  # greetings: 'Seminars by grad students, for grad students!'
-  # text: ''
+  # greetings: 'this adds big text'
+  # text: 'this adds small text'
 # side:
 #   home:
 #   - content: 'If you like the theme make sure to give the repo a star!'
