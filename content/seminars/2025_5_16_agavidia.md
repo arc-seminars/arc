@@ -6,7 +6,7 @@ location: "312 Cahill"
 timeZone: "America/Los_Angeles"
 
 # Talk information
-title: "Weighing the Giants: Constraining Galaxy Cluster Shapes and Mass"
+title: "The Triaxial Cow: Measuring the 3D Shapes of Galaxy Clusters"
 speaker: "Adriana Gavidia"
 speakerAffiliation: "Observational Cosmology; Caltech"
 host: "Kane"
@@ -36,7 +36,7 @@ tags:
   # - "dark matter"
   # - "axions"
   # - "supernovae"
-  - "tabletop experiments"
+  # - "tabletop experiments"
   # - "LIGO"
   # - "LISA"
   # - "pulsar timing arrays"
@@ -64,7 +64,7 @@ tags:
   # - "radio astronomy"
   # - "fast radio bursts"
   # - "asteroseismology"
-  - "beyond general relativity"
+  # - "beyond general relativity"
   # - "scattering amplitudes"
   # - "computational methods"
   # - "programming languages"
@@ -78,4 +78,12 @@ resources: []
 
 ---
 
-TBD
+Galaxy clusters are the largest and most recently formed objects in the universe, making them rich laboratories to test the astrophysics of structure formation and cosmology.
+Within the current standard cosmological framework, structure formation is pictured as a hierarchical merging process, where clusters form from the gravitational collapse of the most dense peaks in the initial primordial density field.
+A triaxial collapse is a direct prediction of structure growth driven by the self-gravity of Gaussian density fluctuations.
+As large scale structure evolves, tidal forces from the most massive peaks guide the surrounding matter into massive filamentary structures, connecting the clusters to one another to form a foam-like structure called the “cosmic web”.
+Numerical simulations indicate that new matter is accreted onto clusters preferentially along these filaments, leading to an alignment between the major axis of the cluster mass halo and the large-scale filament, giving clusters an intrinsically aspherical morphology.
+This prediction is supported by evidence from various observational probes such as X-ray, Sunyaev-Zeldovich Compton-y, and gravitational lensing.
+Despite this, until recently studies have taken the infamous “spherical cow” approach to model cluster morphology, as data quality and the lack of availability of multi-wavelength data sets limited the ability to perform triaxial analyses.
+To obtain less biased measurements of the cluster properties used to constrain cosmology, it is crucial we upgrade to the “triaxial cow” model.
+In this talk, I will present our triaxial modeling technique enabled by the high quality multi-probe data set collected for the CHEX-MATE collaboration and the science we can extract from these measurements.
