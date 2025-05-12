@@ -13,19 +13,6 @@
       <time datetime="{{ $startDateTimeMachine }}">{{ $startDateHuman }} at {{$startTimeHuman}}–{{$endTimeHuman}} </time>
     {{ end }}
 
-
-
-    <!-- {{ with .Params.startDateTime }}
-      {{ $startDateTimeMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
-      {{ $startDateHuman := . | time.Format "Monday, January 2, 2006" }}
-      {{ $startTimeHuman := . | time.Format "3:04" }}
-      
-      {{ with $.Params.endDateTime }}
-        {{ $endTimeHuman := . | time.Format "3:04 PM" }}
-        <time datetime="{{ $startDateTimeMachine }}">{{ $startDateHuman }} at {{$startTimeHuman}}–{{$endTimeHuman}} </time>
-      {{end}}
-    {{end}} -->
-
     <!-- speaker -->
     {{ with .Params.speaker }}
       {{ $speaker := . }}
