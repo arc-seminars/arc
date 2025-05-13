@@ -10,15 +10,16 @@
     </div>
 
     <!-- divide seminars into upcoming and future -->
+    <!-- don't include seminars which have been cancelled -->
     {{- $upcomingSeminars := slice -}}
     {{- $pastSeminars := slice -}}
 
     {{- range $i := $indexablePages -}}
-      {{- with $i.Params.startDateTime -}}
-        {{- $start := time . -}}
-        {{- if ge $start now -}}
+      {{- with $i.Params -}} <!-- upcoming, non-cancelled seminars -->
+        {{- $start := time .startDateTime -}}
+        {{- if and (ge $start now) (not .cancelled) -}}
           {{- $upcomingSeminars = $upcomingSeminars | append $i -}}
-        {{- else -}}
+        {{- else if not .cancelled -}} <!-- past, non-cancelled seminars -->
           {{- $pastSeminars = $pastSeminars | append $i -}}
         {{- end -}}
       {{- end -}}
