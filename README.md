@@ -7,12 +7,6 @@ The website directory is here:
 https://arc-seminars.github.io/arc/
 ```
 
-**Before editing:** make sure to pull the most recent version of the repository:
-
-```
-git pull
-```
-
 ## For editors: quick start
 
 This is a step-by-step list for setting up the ability to edit the site.
@@ -112,12 +106,28 @@ Currently most seminar markdown files have a lot of commented out tags, to remin
 
 If there are no resources, remove all the bullet points under `resources:` (starting with `-`) and add `[]` after `resources:` to indicate that it is an empty list.
 
+### Updating an existing seminar
+
+To **add a resource** (e.g., flier, slides, notes, etc.), make a subfolder in the `ARC Seminars` Google Drive corresponding to the seminar (if it does not yet exist).
+Then store in the `resources:` field both the type of resource (e.g., `resources:`) and a Google Drive link to the resource.
+For example,
+
+```
+resources:
+  - type: "flier"
+    url: "https://drive.google.com/file/d/1ECPrDDYT6D998HDE30nvGwi0RUkb8h-9/view?usp=drive_link"
+  - type: "slides"
+    url: "https://docs.google.com/presentation/d/1IqBCVwoG9_5sC5f46o2TppQXsqmmYBp0/edit?usp=sharing"
+```
+
+Please follow the indentations above.
+
 To **add a YouTube link**, navigate to the YouTube video and copy the short string of characters (shortcode) after `https://www.youtube.com/watch?v=` (and before `&...`).
 It should look something like this `dQw4w9WgXcQ`.
 Then add the shortcode as `recordingYouTubeShortcode: "dQw4w9WgXcQ"`.
 If there is no recording, it should instead look like `recordingYouTubeShortcode: null`.
 
-### Cancelling a seminar
+### Cancelling an existing seminar
 
 To **cancel a seminar**, just modify the `cancelled:` field to `cancelled: true`.
 *Do not delete the seminar markdown file.*
