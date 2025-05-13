@@ -1,0 +1,53 @@
+{{- define "main" -}}
+  <h1>{{- partial "title.html" . -}}</h1>
+  {{- .Content -}}
+
+  <!-- get list of pages with cancelled talks excluded -->
+  {{- $activePages := slice -}}
+
+  {{- range $i := .Pages -}}
+    {{- with $i.Params -}}
+      {{- if not .cancelled -}}
+        {{- $activePages = $activePages | append $i -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  <!-- format list of items -->
+  <!-- handle seminars and tags cases separately -->
+
+  <!-- for seminars, show dates and sort by date with most recent on top -->
+  {{- if or (eq .Kind "section") (eq .Kind "term") -}}
+    <!-- modified to sort pages in reverse-chronological order -->
+    {{- $pages := sort $activePages "Params.startDateTime" "desc" -}}
+
+    {{- range $pages -}}
+      <div class="list-group-heading">
+        <a href="{{- .RelPermalink -}}">{{- partial "title.html" . -}}</a>
+        <time class="dim" style="float: right;" datetime="2023-05-02T00:00:00Z">
+          <!-- changed .Date to .Params.startDateTime -->
+          {{- dateFormat (or .Site.Params.dateFormat "Jan 2 2006") .Params.startDateTime -}}
+        </time>
+      </div>
+      <!-- <div class="list-group-summary content-font">{{- partial "components/summary.html" . -}}</div> -->
+    {{- end -}}
+    
+  <!-- for tags, don't show any dates and sort in alphabetical order -->
+  {{ else }}
+    {{- $pages := sort $activePages "Title" "asc" -}}
+
+    {{- range $pages -}}
+      <div class="list-group-heading">
+        <a href="{{- .RelPermalink -}}">{{- partial "title.html" . -}}</a>
+      </div>
+      <!-- <div class="list-group-summary content-font">{{- partial "components/summary.html" . -}}</div> -->
+    {{- end -}}
+  {{ end }}
+
+{{- end -}}
+
+{{- define "side" -}}
+  <!-- <aside id="side-pane" class="{{- cond site.Params.rtwt.side.list.sidePaneSticky "side-sticky" "" -}}">
+    {{- partial "side/list.html" . -}}
+  </aside> -->
+{{- end -}}

@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/' # TODO to change
+baseURL = 'https://arc-seminars.github.io/arc-seminars/'
 languageCode = 'en-us'
 title = 'Caltech ARC Seminars'
 
