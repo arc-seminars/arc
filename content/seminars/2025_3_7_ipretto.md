@@ -73,8 +73,6 @@ tags:
 resources:
   - type: "flier"
     url: "https://drive.google.com/file/d/1iy6f5a6EbgorHGptu0MaAIPX4ppDFcE1/view?usp=drive_link"
-  - type: "recording"
-    url: "https://www.youtube.com/watch?v=Rak_uvoqXEk"
   - type: "slides"
     url: "https://drive.google.com/file/d/1uYzJxjUMcLJsEfxapGt0mRTfgmo8c68q/view?usp=drive_link"
 

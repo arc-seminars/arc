@@ -29,8 +29,6 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - type: "recording"
-    url: "https://www.youtube.com/watch?v=j1kI04S6r40"
   - type: "slides"
     url: "https://drive.google.com/file/d/1EQZBnsm01zyNfEsakK7Ul0cdWnYOOap_/view?usp=drive_link"
 
