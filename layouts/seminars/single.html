@@ -16,12 +16,17 @@
 
     <!-- time -->
     {{ with .Params }}
+      {{- $start := time .startDateTime -}}
       {{ $startDateTimeMachine := .startDateTime | time.Format "2006-01-02T15:04:05-07:00" }}
       {{ $startDateHuman := .startDateTime | time.Format "Monday, January 2, 2006" }}
       {{ $startTimeHuman := .startDateTime | time.Format "3:04" }}
       {{ $endTimeHuman := .endDateTime | time.Format "3:04 PM" }}
-
-      <time datetime="{{ $startDateTimeMachine }}">{{ $startDateHuman }} at {{$startTimeHuman}}–{{$endTimeHuman}} </time>
+      
+      {{ if ge $start now }}
+        <time datetime="{{ $startDateTimeMachine }}">{{ $startDateHuman }} at {{ $startTimeHuman }}–{{ $endTimeHuman }} (<u><strong>upcoming</strong></u>) </time>
+      {{ else }}
+        <time datetime="{{ $startDateTimeMachine }}">{{ $startDateHuman }} at {{ $startTimeHuman }}–{{ $endTimeHuman }}</time>
+      {{ end }}
     {{ end }}
 
     <!-- speaker -->
