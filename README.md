@@ -7,6 +7,12 @@ The website directory is here:
 https://arc-seminars.github.io/arc/
 ```
 
+**Before editing:** make sure to pull the most recent version of the repository:
+
+```
+git pull
+```
+
 ## For editors: quick start
 
 This is a step-by-step list for setting up the ability to edit the site.
