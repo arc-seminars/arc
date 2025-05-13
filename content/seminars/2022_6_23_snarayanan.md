@@ -8,7 +8,7 @@ timeZone: "America/Los_Angeles"
 # Talk information
 title: "Chemistry of Planet Formation"
 speaker: "Suchitra Narayanan"
-speakerAffiliation: "Institute for Astronomy; UH Manoa"
+speakerAffiliation: "Institute for Astronomy / UH Mānoa"
 host: "Rui"
 cancelled: false
 

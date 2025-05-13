@@ -8,7 +8,7 @@ timeZone: "America/Los_Angeles"
 # Talk information
 title: "Rapid Stellar Rotation and Exoplanet Spin-Orbit Measurement"
 speaker: "Shashank Dholakia, Shishir Dholakia"
-speakerAffiliation: "Astronomy; UC Berkeley"
+speakerAffiliation: "Astronomy / UC Berkeley"
 host: "Rui"
 cancelled: false
 

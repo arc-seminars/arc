@@ -8,7 +8,7 @@ timeZone: "America/Los_Angeles"
 # Talk information
 title: "Mass Transfer Stability in Binaries"
 speaker: "Peter Scherbak"
-speakerAffiliation: "TAPIR; Caltech"
+speakerAffiliation: "TAPIR / Caltech"
 host: "Rui"
 cancelled: false
 

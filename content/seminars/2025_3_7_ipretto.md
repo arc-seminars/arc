@@ -8,7 +8,7 @@ timeZone: "America/Los_Angeles"
 # Talk information
 title: "Ring-ring: black hole calling!"
 speaker: "Isabella Pretto"
-speakerAffiliation: "TAPIR, SXS; Caltech"
+speakerAffiliation: "TAPIR, SXS / Caltech"
 host: "Knapp"
 cancelled: false
 

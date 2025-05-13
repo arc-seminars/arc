@@ -8,7 +8,7 @@ timeZone: "America/Los_Angeles"
 # Talk information
 title: "The Triaxial Cow: Measuring the 3D Shapes of Galaxy Clusters"
 speaker: "Adriana Gavidia"
-speakerAffiliation: "Observational Cosmology; Caltech"
+speakerAffiliation: "Observational Cosmology / Caltech"
 host: "Kane"
 cancelled: false
 

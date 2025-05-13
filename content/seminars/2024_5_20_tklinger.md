@@ -8,7 +8,7 @@ timeZone: "America/Los_Angeles"
 # Talk information
 title: "What's so Extreme About Extreme Mass Ratio Inspirals?"
 speaker: "Talya Klinger"
-speakerAffiliation: "TAPIR, SXS; Caltech"
+speakerAffiliation: "TAPIR, SXS / Caltech"
 host: "Rui"
 cancelled: false
 

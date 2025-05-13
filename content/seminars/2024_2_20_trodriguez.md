@@ -8,7 +8,7 @@ timeZone: "America/Los_Angeles"
 # Talk information
 title: "The X-ray Main Sequence"
 speaker: "Tony Rodríguez"
-speakerAffiliation: "Astronomy; Caltech"
+speakerAffiliation: "Astronomy / Caltech"
 host: "Rui"
 cancelled: false
 

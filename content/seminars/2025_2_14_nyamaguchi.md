@@ -8,7 +8,7 @@ timeZone: "America/Los_Angeles"
 # Talk information
 title: "WD + MS binaries as probes of binary interaction"
 speaker: "Natsuko Yamaguchi"
-speakerAffiliation: "Astronomy; Caltech"
+speakerAffiliation: "Astronomy / Caltech"
 host: "Knapp"
 cancelled: false
 

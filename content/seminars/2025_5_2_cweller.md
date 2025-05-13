@@ -8,7 +8,7 @@ timeZone: "America/Los_Angeles"
 # Talk information
 title: "Black Hole Perturbation Theory and Tests of General Relativity"
 speaker: "Colin Weller"
-speakerAffiliation: "TAPIR; Caltech"
+speakerAffiliation: "TAPIR / Caltech"
 host: "Rui"
 cancelled: true
 

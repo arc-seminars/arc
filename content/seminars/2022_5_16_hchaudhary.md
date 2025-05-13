@@ -8,7 +8,7 @@ timeZone: "America/Los_Angeles"
 # Talk information
 title: "Physics-Informed Machine Learning"
 speaker: "Himanshu Chaudhary"
-speakerAffiliation: "TAPIR, SXS; Caltech"
+speakerAffiliation: "TAPIR, SXS / Caltech"
 host: "Rui"
 cancelled: false
 

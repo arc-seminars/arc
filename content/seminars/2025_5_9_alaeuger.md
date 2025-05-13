@@ -8,7 +8,7 @@ timeZone: "America/Los_Angeles"
 # Talk information
 title: "Tasting the Gravitational Rainbow: the Future of Gravitational Waves"
 speaker: "Andrew Laeuger"
-speakerAffiliation: "TAPIR; Caltech"
+speakerAffiliation: "TAPIR / Caltech"
 host: "Rui"
 cancelled: false
 

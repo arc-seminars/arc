@@ -8,7 +8,7 @@ timeZone: "America/Los_Angeles"
 # Talk information
 title: "Probing Cosmic Inflation with BICEP Array"
 speaker: "Aaron Steiger"
-speakerAffiliation: "Observational Cosmology; Caltech"
+speakerAffiliation: "Observational Cosmology / Caltech"
 host: "Kane"
 cancelled: false
 

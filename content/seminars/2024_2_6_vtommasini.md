@@ -8,7 +8,7 @@ timeZone: "America/Los_Angeles"
 # Talk information
 title: "Possible Spacetime Discretization in Astrophysical Phenomena"
 speaker: "Vittoria Tommasini"
-speakerAffiliation: "TAPIR, SXS; Caltech"
+speakerAffiliation: "TAPIR, SXS / Caltech"
 host: "Rui"
 cancelled: false
 
