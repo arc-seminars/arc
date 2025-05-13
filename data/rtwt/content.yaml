@@ -4,10 +4,12 @@ home:
   # text: 'this adds small text'
 side:
   home:
-  # - content: 'If you like the theme make sure to give the repo a star!'
-  #   imagePath: 'images/gh_source.png'
-  #   imageHref: 'https://github.com/math-queiroz/rusty-typewriter'
-  #   imageWidth: '100%'
-  - title: 'Interested?'
-    content: 'Join our mailing list for updates [here](http://lists.astro.caltech.edu:88/mailman/listinfo/arc)!'
+    - title: 'Organizers'
+      content: |
+        Taylor Knapp (TAPIR/SXS/LIGO, [tknapp@caltech.edu](mailto:tknapp@caltech.edu))
+        
+        Elijah Kane (ObsCos, [ekane@caltech.edu](mailto:ekane@caltech.edu))
 
+        Nicholas Rui (TAPIR, [nrui@caltech.edu](mailto:nrui@caltech.edu))
+    - title: 'Interested?'
+      content: 'Join our mailing list for updates [here](http://lists.astro.caltech.edu:88/mailman/listinfo/arc)!'
