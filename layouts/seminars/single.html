@@ -37,13 +37,17 @@
     <!-- host -->
     <p>Host: {{ .Params.Host }}</p>
 
+    <!-- add additional files, e.g., slides, notes -->
+    {{ if .Params.resources }} <!-- don't show div at all unless there are any files -->
+      <div>Files:</div>
+    {{ end }}
+    <ul>
+    {{ range .Params.resources }}
+      <li><a href="{{ .url }}">{{ .type }}</a></li>
+    {{ end }}
+    </ul>
 
-
-
-
-
-
-
+    <!-- tags -->
     <aside>
       {{ with .GetTerms "tags" }}
         <div>{{ (index . 0).Parent.LinkTitle }}</div>
@@ -54,5 +58,7 @@
         </ul>
       {{ end }}
     </aside>
+
+
   </section>
 {{ end }}
