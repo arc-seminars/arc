@@ -1,8 +1,13 @@
-baseURL = 'https://example.org/' # to change
+baseURL = 'https://example.org/' # TODO to change
 languageCode = 'en-us'
 title = 'Caltech ARC Seminars'
 
 theme = 'rusty-typewriter'
+
+# for github page hosting
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 
 [[menus.main]]
  name = 'Seminars'
