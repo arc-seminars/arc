@@ -76,6 +76,10 @@ tags:
 # Files (if missing: [])
 resources: []
 
+# recording link: the string of characters at the end of the YouTube URL
+# (if there is no recording, set this to null)
+recordingYouTubeShortcode: null
+
 ---
 
 Galaxy clusters are the largest and most recently formed objects in the universe, making them rich laboratories to test the astrophysics of structure formation and cosmology.

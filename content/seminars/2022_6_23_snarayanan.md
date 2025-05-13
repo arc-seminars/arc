@@ -30,9 +30,11 @@ tags:
   # - "exoplanets"
 
 # Files (if missing: [])
-resources:
-  - type: "recording"
-    url: "https://www.youtube.com/watch?v=D7dm4ffkOzI"
+resources: []
+
+# recording link: the string of characters at the end of the YouTube URL
+# (if there is no recording, set this to null)
+recordingYouTubeShortcode: "D7dm4ffkOzI"
 
 ---
 

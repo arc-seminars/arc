@@ -73,6 +73,10 @@ resources:
   - type: "slides"
     url: "https://drive.google.com/file/d/17TBHifniyrA6rBMQtQh2i5gkfoPtnwIP/view?usp=drive_link"
 
+# recording link: the string of characters at the end of the YouTube URL
+# (if there is no recording, set this to null)
+recordingYouTubeShortcode: null
+
 ---
 
 Binary interaction is among the most important unsolved problems in stellar astrophysics.

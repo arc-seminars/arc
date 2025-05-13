@@ -1,5 +1,16 @@
 {{ define "main" }}
   <section>
+    <!-- recording, if exists -->
+    {{ if .Params.recordingYouTubeShortcode }}
+      {{ $recordingYouTubeShortcode := .Params.recordingYouTubeShortcode }}
+      <iframe width="560" height="340"
+              src="https://www.youtube.com/embed/{{ $recordingYouTubeShortcode }}"
+              title="{{ .Title }}"
+              frameborder="0"
+              allowfullscreen>
+      </iframe>
+    {{ end }}
+
     <!-- title -->
     <h1>{{ .Title }}</h1>
 

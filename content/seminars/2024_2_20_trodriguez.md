@@ -67,8 +67,10 @@ tags:
 resources:
   - type: "flier"
     url: "https://drive.google.com/file/d/1mJfJeCl5AxqjCrtldbtueiH-Rav9Nfj_/view?usp=drive_link"
-  - type: "recording"
-    url: "https://www.youtube.com/watch?v=VcxAbH9QLSQ"
+
+# recording link: the string of characters at the end of the YouTube URL
+# (if there is no recording, set this to null)
+recordingYouTubeShortcode: "VcxAbH9QLSQ"
 
 ---
 

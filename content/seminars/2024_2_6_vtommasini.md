@@ -63,6 +63,10 @@ resources:
   - type: "flier"
     url: "https://drive.google.com/file/d/1h_8m7ZmrG-uR-QA4NFoAyQaSqkEPk275/view?usp=drive_link"
 
+# recording link: the string of characters at the end of the YouTube URL
+# (if there is no recording, set this to null)
+recordingYouTubeShortcode: null
+
 ---
 
 We know quantum mechanical rules hold up on the small scale, but we have yet to find a way to connect quantum mechanics with macroscopic systems like black holes.

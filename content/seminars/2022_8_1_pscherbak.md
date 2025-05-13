@@ -34,10 +34,12 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - type: "recording"
-    url: "https://www.youtube.com/watch?v=iPGQT0CHOAE"
   - type: "slides"
     url: "https://drive.google.com/file/d/1PGHm2s-oHViWvAzrDnryub_gHdGRQBKR/view?usp=drive_link"
+
+# recording link: the string of characters at the end of the YouTube URL
+# (if there is no recording, set this to null)
+recordingYouTubeShortcode: "iPGQT0CHOAE"
 
 ---
 

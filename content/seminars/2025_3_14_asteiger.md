@@ -76,10 +76,12 @@ tags:
 resources:
   - type: "flier"
     url: "https://drive.google.com/file/d/1cpMJfiNe-0rU2iUzmTOSd5nL42hQTI6U/view?usp=drive_link"
-  - type: "recording"
-    url: "https://www.youtube.com/watch?v=OyZ_kH5Vvxg"
   - type: "slides"
     url: "https://drive.google.com/file/d/1CiQVpiUpvTb8-SCRbpxBm4DndTztsXdP/view?usp=drive_link"
+
+# recording link: the string of characters at the end of the YouTube URL
+# (if there is no recording, set this to null)
+recordingYouTubeShortcode: "OyZ_kH5Vvxg"
 
 ---
 

@@ -34,6 +34,10 @@ resources:
   - type: "slides"
     url: "https://drive.google.com/file/d/1EQZBnsm01zyNfEsakK7Ul0cdWnYOOap_/view?usp=drive_link"
 
+# recording link: the string of characters at the end of the YouTube URL
+# (if there is no recording, set this to null)
+recordingYouTubeShortcode: "j1kI04S6r40"
+
 ---
 
 

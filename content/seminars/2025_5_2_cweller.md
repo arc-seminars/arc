@@ -77,6 +77,10 @@ resources:
   - type: "flier"
     url: "https://drive.google.com/file/d/1Kq7TuDYK8nWb-F5fx2minbLmfq4r2uxM/view?usp=drive_link"
 
+# recording link: the string of characters at the end of the YouTube URL
+# (if there is no recording, set this to null)
+recordingYouTubeShortcode: null
+
 ---
 
 Black hole perturbation theory, initiated by the seminal work of Tullio Regge and John Wheeler nearly seventy years ago, has become an indispensable tool in cosmology, high energy astrophysics, and at elucidating the fundamental nature of gravity.

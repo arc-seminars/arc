@@ -78,6 +78,10 @@ resources:
   - type: "slides"
     url: "https://drive.google.com/file/d/1uYzJxjUMcLJsEfxapGt0mRTfgmo8c68q/view?usp=drive_link"
 
+# recording link: the string of characters at the end of the YouTube URL
+# (if there is no recording, set this to null)
+recordingYouTubeShortcode: "Rak_uvoqXEk"
+
 ---
 
 The ringdown phase of a binary black hole merger encodes key information about the remnant’s properties through its quasinormal mode (QNM) spectrum.

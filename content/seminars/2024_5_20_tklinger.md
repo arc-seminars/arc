@@ -71,6 +71,10 @@ resources:
   - type: "slides"
     url: "https://drive.google.com/file/d/1jyeCw1P5qHCMnBStJzNM3PkWL39E2HFR/view?usp=drive_link"
 
+# recording link: the string of characters at the end of the YouTube URL
+# (if there is no recording, set this to null)
+recordingYouTubeShortcode: null
+
 ---
 
 I present a broad overview of extreme mass ratio inspirals with a particular focus on what makes them so challenging to model and detect.
