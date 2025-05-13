@@ -15,8 +15,8 @@
     {{- $pastSeminars := slice -}}
 
     {{- range $i := $indexablePages -}}
-      {{- with $i.Params -}} <!-- upcoming, non-cancelled seminars -->
-        {{- $start := time .startDateTime -}}
+      {{- with $i.Params -}}
+        {{- $start := time .startDateTime -}} <!-- upcoming, non-cancelled seminars -->
         {{- if and (ge $start now) (not .cancelled) -}}
           {{- $upcomingSeminars = $upcomingSeminars | append $i -}}
         {{- else if not .cancelled -}} <!-- past, non-cancelled seminars -->

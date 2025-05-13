@@ -2,10 +2,24 @@
   <h1>{{- partial "title.html" . -}}</h1>
   {{- .Content -}}
 
+  <!-- get list of pages with cancelled talks excluded -->
+  {{- $activePages := slice -}}
+
+  {{- range $i := .Pages -}}
+    {{- with $i.Params -}}
+      {{- if not .cancelled -}}
+        {{- $activePages = $activePages | append $i -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  <!-- format list of items -->
   <!-- handle seminars and tags cases separately -->
-  {{- if eq .Type "seminars" -}}
+
+  <!-- for seminars, show dates and sort by date with most recent on top -->
+  {{- if or (eq .Kind "section") (eq .Kind "term") -}}
     <!-- modified to sort pages in reverse-chronological order -->
-    {{- $sortedPages := sort .Pages "Params.startDateTime" "asc" -}}
+    {{- $sortedPages := sort $activePages "Params.startDateTime" "asc" -}}
     {{- $pages := (.Paginate ($sortedPages.GroupByDate "2006") site.Params.rtwt.countPageItems) -}}
 
     {{- range $pages.PageGroups -}}
@@ -26,7 +40,7 @@
     
   <!-- for tags, don't show any dates and sort in alphabetical order -->
   {{ else }}
-    {{- $sortedPages := sort .Pages "Title" "desc" -}}
+    {{- $sortedPages := sort $activePages "Title" "desc" -}}
     {{- $pages := (.Paginate ($sortedPages.GroupByDate "2006") site.Params.rtwt.countPageItems) -}}
     {{- range $pages.PageGroups -}}
       {{- range .Pages -}}
@@ -37,7 +51,7 @@
       {{- end -}}
     {{- end -}}
     {{ template "_internal/pagination.html" . }}
-  {{ end}}
+  {{ end }}
 
 {{- end -}}
 
