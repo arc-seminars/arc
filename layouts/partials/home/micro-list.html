@@ -1,15 +1,12 @@
 {{- $title := .title -}}
-<!-- {{- $items := .items -}} -->
-
-<!-- show sorted by date -->
-{{- $sortedItems := sort .items "Params.startDateTime" "desc" -}}
+{{- $items := .items -}}
 
 <!-- number of items to show -->
 {{ $showNum := 100 }} 
 
 <h2>{{- $title -}}</h2>
 <div class="flat-list">
-  {{- range first (default $showNum site.Params.rtw_theme.params.home.countRecent) $sortedItems -}}
+  {{- range first (default $showNum site.Params.rtw_theme.params.home.countRecent) $items -}}
     <div class="flat-list-item" style="min-height:40px">
       <div>
         <a href="{{- .RelPermalink -}}">{{- .LinkTitle -}}</a>

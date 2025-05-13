@@ -1,0 +1,40 @@
+{{- define "main" -}}
+  {{- .Content -}}
+  {{- partial "home/greetings.html" -}}
+
+  {{- $indexablePages := where site.RegularPages "Params.indexable" "ne" false -}}
+
+  <div style="width:95%;margin:0 auto;">
+    <div class="show-md" style="display:none;">
+      {{- partial "search_bar" . -}}
+    </div>
+
+    <!-- divide seminars into upcoming and future -->
+    {{- $upcomingSeminars := slice -}}
+    {{- $pastSeminars := slice -}}
+
+    {{- range $i := $indexablePages -}}
+      {{- with $i.Params.startDateTime -}}
+        {{- $start := time . -}}
+        {{- if ge $start now -}}
+          {{- $upcomingSeminars = $upcomingSeminars | append $i -}}
+        {{- else -}}
+          {{- $pastSeminars = $pastSeminars | append $i -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $sortedUpcomingSeminars := sort $upcomingSeminars "Params.startDateTime" "asc" -}}
+    {{- $sortedPastSeminars := sort $pastSeminars "Params.startDateTime" "desc" -}}
+
+    {{- partial "home/micro-list.html" (dict "items" $sortedUpcomingSeminars "title" (i18n "upcoming_seminars")) -}}
+    {{- partial "home/micro-list.html" (dict "items" $sortedPastSeminars "title" (i18n "past_seminars")) -}}
+
+  </div>
+{{- end -}}
+
+{{- define "side" -}}
+  <aside id="side-pane" class="{{- cond site.Params.rtwt.side.home.sidePaneSticky "side-sticky" "" -}}">
+    {{- partial "side/home.html" . -}}
+  </aside>
+{{- end -}}

@@ -12,8 +12,8 @@ scroll_top: Scroll to Top
 footer: Made with ❤️ and powered by {{ .ThemeAnchor }} theme for {{ .HugoAnchor }}
 
 # Home
-featured_posts: Featured Posts
-recent_posts: Recent Posts
+upcoming_seminars: Upcoming Seminars
+past_seminars: Past Seminars
 #
 # Search
 js_required: It's necessary to enable Javascript

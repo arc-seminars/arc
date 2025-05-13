@@ -6,11 +6,6 @@ don't show cancelled talks
 add links to flier, etc.
 currently timezone isn't being used
 
-divide upcoming and past seminars
-(and remove "Recent Posts" label)
-- en.yaml <- will be the key to this
-
-add Taylor's flier, maybe have some nice graphic
 
 when tag is clicked, also incorrectly rendered :(
 - also, there are dates for the tag list itself
@@ -18,6 +13,8 @@ when tag is clicked, also incorrectly rendered :(
 search is broken
 
 link to mailing list
+
+
 
 
 
