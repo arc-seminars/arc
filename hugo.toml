@@ -3,3 +3,13 @@ languageCode = 'en-us'
 title = 'Caltech ARC Seminars'
 
 theme = 'rusty-typewriter'
+
+[[menus.main]]
+ name = 'Seminars'
+ pageRef = '/seminars'
+ weight = 1
+
+[[menus.main]]
+ name = 'Tags'
+ pageRef = '/tags'
+ weight = 2
