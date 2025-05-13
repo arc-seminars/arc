@@ -1,7 +1,6 @@
-baseURL = 'https://arc-seminars.github.io/arc-seminars/'
+baseURL = 'https://arc-seminars.github.io/arc/'
 languageCode = 'en-us'
 title = 'Caltech ARC Seminars'
-
 theme = 'rusty-typewriter'
 
 # for github page hosting
