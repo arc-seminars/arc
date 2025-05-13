@@ -14,13 +14,10 @@
     {{ end }}
 
     <!-- speaker -->
-    {{ with .Params.speaker }}
-      {{ $speaker := . }}
-
-      {{ with $.Params.speakerAffiliation }}
-        {{ $speakerAffiliation := . }}
-        <p><strong>{{ $speaker }}</strong>, <i>{{ $speakerAffiliation }}</i></p>
-      {{ end }}
+    {{ with .Params }}
+      {{ $speaker := .speaker }}
+      {{ $speakerAffiliation := .speakerAffiliation }}
+      <p><strong>{{ $speaker }}</strong>, <i>{{ $speakerAffiliation }}</i></p>
     {{ end }}
 
     <!-- abstract -->

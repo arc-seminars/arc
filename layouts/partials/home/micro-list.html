@@ -27,9 +27,12 @@
       </div>
 
       <!-- display first two lines of abstract; modified from original version -->
-      {{ with .Content }}
-        <small><p>{{ . }}</p></small>
-      {{ end }}
+      {{ $speaker := .Params.speaker }}
+      {{ $speakerAffiliation := .Params.speakerAffiliation }}
+      <small><p class="clamp-10">
+        <strong>{{ $speaker }}</strong>, <i>{{ $speakerAffiliation }}</i>
+        {{ .Content }}
+      </p></small>
 
     </div>
   {{- end -}}
