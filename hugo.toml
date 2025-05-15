@@ -1,4 +1,4 @@
-baseURL = 'https://arc-seminars.github.io/'
+baseURL = 'https://arc-seminars.github.io/arc/'
 languageCode = 'en-us'
 title = 'Caltech ARC Seminars'
 theme = 'rusty-typewriter'
@@ -24,7 +24,7 @@ theme = 'rusty-typewriter'
  home = ["HTML","RSS", "SearchIndex"]
 
 [params]
-  basePath = "/"
+  basePath = "/arc/"
   searchLimit = 20  # or whatever number you want
 
 # for the menu bar
