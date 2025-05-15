@@ -23,7 +23,7 @@ tags:
 
 # Files (if missing: [])
 resources:
-  - title: "Jupyter notebooks"
+  - type: "Jupyter notebooks"
     url: "https://github.com/shashankdholakia/gravity-dark/tree/master/notebooks"
 
 # recording link: the string of characters at the end of the YouTube URL
