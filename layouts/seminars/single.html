@@ -14,7 +14,7 @@
     <!-- title -->
     <h1>{{ .Title }}</h1>
 
-    <!-- time -->
+    <!-- time and location -->
     <!-- will show (upcoming) if the seminar is in the future -->
     <!-- if cancelled, show it as cancelled with a strike-through -->
     {{ with .Params }}
@@ -23,13 +23,15 @@
       {{ $startDateHuman := .startDateTime | time.Format "Monday, January 2, 2006" }}
       {{ $startTimeHuman := .startDateTime | time.Format "3:04" }}
       {{ $endTimeHuman := .endDateTime | time.Format "3:04 PM" }}
+
+      {{ $location := .location }}
       
       {{ if .cancelled }}
-        <time datetime="{{ $startDateTimeMachine }}"><s>{{ $startDateHuman }} at {{ $startTimeHuman }}–{{ $endTimeHuman }}</s> (<u><strong>cancelled</strong></u>) </time>
+        <time datetime="{{ $startDateTimeMachine }}"><s>{{ $startDateHuman }} at {{ $startTimeHuman }}–{{ $endTimeHuman }} in {{ $location }}</s> (<u><strong>cancelled</strong></u>) </time>
       {{ else if ge $start now }}
-        <time datetime="{{ $startDateTimeMachine }}">{{ $startDateHuman }} at {{ $startTimeHuman }}–{{ $endTimeHuman }} (<u><strong>upcoming</strong></u>) </time>
+        <time datetime="{{ $startDateTimeMachine }}">{{ $startDateHuman }} at {{ $startTimeHuman }}–{{ $endTimeHuman }} in {{ $location }} (<u><strong>upcoming</strong></u>) </time>
       {{ else }}
-        <time datetime="{{ $startDateTimeMachine }}">{{ $startDateHuman }} at {{ $startTimeHuman }}–{{ $endTimeHuman }}</time>
+        <time datetime="{{ $startDateTimeMachine }}">{{ $startDateHuman }} at {{ $startTimeHuman }}–{{ $endTimeHuman }} in {{ $location }}</time>
       {{ end }}
     {{ end }}
 
