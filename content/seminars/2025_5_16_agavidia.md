@@ -47,7 +47,7 @@ tags:
   - "large scale structure"
   - "galaxies"
   # - "quantum mechanics"
-  - "black holes"
+  # - "black holes"
   # - "binary black holes"
   # - "quasinormal modes"
   # - "gravitational waves"
