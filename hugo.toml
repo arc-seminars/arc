@@ -8,6 +8,26 @@ theme = 'rusty-typewriter'
   [caches.images]
     dir = ':cacheDir/images'
 
+# for the search bar
+[outputFormats]
+ [outputFormats.SearchIndex]
+  mediaType = "application/json"
+  baseName = "searchindex"
+  isPlainText = true
+  notAlternative = true
+
+[mediaTypes]
+ [mediaTypes."application/json"]
+  suffixes = ["json"]
+
+[outputs]
+ home = ["HTML","RSS", "SearchIndex"]
+
+[params]
+  basePath = "/arc/"
+  searchLimit = 20  # or whatever number you want
+
+# for the menu bar
 [[menus.main]]
  name = 'Seminars'
  pageRef = '/seminars'

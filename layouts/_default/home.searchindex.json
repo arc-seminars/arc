@@ -1,0 +1,14 @@
+{{- $.Scratch.Add "searchindex" slice -}}
+{{- range $index, $element := where site.RegularPages "Params.indexable" "ne" false -}}
+    {{- $.Scratch.Add "searchindex" (dict
+        "id" $index
+        "title" $element.Title
+        "speaker" $element.Params.speaker
+        "cancelled" $element.Params.cancelled
+        "permalink" $element.RelPermalink
+        "tags" (delimit ($element.Params.tags | default "") ", ")
+        "shortdate" ($element.Params.startDateTime | time.Format "Mon, Jan 2, 2006")
+        "longdate" ($element.Params.startDateTime | time.Format "Monday, January 2, 2006")
+        ) -}}
+{{- end -}}
+{{- $.Scratch.Get "searchindex" | jsonify -}}
