@@ -17,6 +17,8 @@
     <!-- time and location -->
     <!-- will show (upcoming) if the seminar is in the future -->
     <!-- if cancelled, show it as cancelled with a strike-through -->
+    {{/* Manually set the cutoff date for upcoming seminars here */}}
+    {{ $upcomingCutoff := time "2025-09-23" }}
     {{ with .Params }}
       {{- $start := time .startDateTime -}}
       {{ $startDateTimeMachine := .startDateTime | time.Format "2006-01-02T15:04:05-07:00" }}
@@ -28,7 +30,7 @@
       
       {{ if .cancelled }}
         <time datetime="{{ $startDateTimeMachine }}"><s>{{ $startDateHuman }} at {{ $startTimeHuman }}–{{ $endTimeHuman }} in {{ $location }}</s> (<u><strong>cancelled</strong></u>) </time>
-      {{ else if ge $start now }}
+      {{ else if ge $start $upcomingCutoff }}
         <time datetime="{{ $startDateTimeMachine }}">{{ $startDateHuman }} at {{ $startTimeHuman }}–{{ $endTimeHuman }} in {{ $location }} (<u><strong>upcoming</strong></u>) </time>
       {{ else }}
         <time datetime="{{ $startDateTimeMachine }}">{{ $startDateHuman }} at {{ $startTimeHuman }}–{{ $endTimeHuman }} in {{ $location }}</time>
